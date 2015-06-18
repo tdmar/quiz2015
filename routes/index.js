@@ -13,4 +13,10 @@ router.get('/', function(req, res, next) {
 router.get('/quizes/question', quizController.question);
 router.get('/quizes/answer', quizController.answer);
 
+/*MTD Introducir dos nueva página */
+
+router.get('/author', function(req, res, next) {
+  res.render('author', {author: 'Mickey Mouse'});
+});
+
 module.exports = router;
